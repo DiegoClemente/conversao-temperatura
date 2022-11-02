@@ -38,5 +38,5 @@ jobs:
         file: src/Dockerfile
         push: true
         tags: |
-          DiegoClemente/conversao-temperatura:v1
-          DiegoClemente/conversao-temperatura:latest
+          diegoclemente/conversao-temperatura:v1
+          diegoclemente/conversao-temperatura:latest
