@@ -6,22 +6,16 @@ name: Node.js CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
-  build:
+  CI:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
     
-    - name: Run a on-line script
-      run: echo hello, world!
-
-    
-    - name: Run a multi-line script
-      run: |
-        echo Add other actons to build,
-        echo test, and deploy your project.
+    - name: Setup NodeJS
+      uses: actions/setup-node@v3.5.1
+      with:
+        node-version: 16.13.2
